@@ -46,11 +46,15 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/icon.png', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
       { url: '/favicon.ico', sizes: 'any' },
     ],
+    shortcut: ['/favicon.ico'],
     apple: [
-      { url: '/apple-icon.png', type: 'image/png' },
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
   openGraph: {
@@ -63,16 +67,16 @@ export const metadata: Metadata = {
         url: "/images/hero_factory.webp",
         width: 1200,
         height: 630,
-        alt: "RHSPL Chana Dal and Besan Processing Plant Facility",
+        alt: "RHSPL State-of-the-Art Processing Plant",
       },
     ],
-    locale: "en_IN",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "RHSPL | Premium Chana Dal & Besan Manufacturer",
-    description: "Leading manufacturer and bulk supplier of superior-grade Chana Dal and Besan nationwide.",
+    description: "Leading manufacturer and bulk supplier of Premium Chana Dal & Besan in India.",
     images: ["/images/hero_factory.webp"],
   },
   robots: {
