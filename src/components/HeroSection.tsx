@@ -15,7 +15,7 @@ export default function HeroSection() {
       className="w-full bg-white border-b border-stone-100 overflow-hidden"
       aria-label="Hero Section"
     >
-      <div ref={revealRef} className="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-20">
+      <div ref={revealRef} className="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-12 lg:pt-9 lg:pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
 
           {/* ── LEFT COLUMN ───────────────────────────── */}
