@@ -44,6 +44,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: baseUrl,
   },
+  icons: {
+    icon: [
+      { url: '/icon.png', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: "RHSPL | Premium Chana Dal & Besan Manufacturer & Bulk Supplier",
     description: "Superior-Grade Chana Dal and Besan manufacturer providing 1500 Kg/Hr processing capacity to leading food manufacturers and wholesalers nationwide.",
