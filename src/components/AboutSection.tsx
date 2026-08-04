@@ -37,7 +37,7 @@ export default function AboutSection() {
           />
 
             <p className="text-[#46464e] text-base sm:text-lg leading-relaxed">
-              Since its inception, Ramkaran Heeralal &amp; Sons (RHSPL), a flagship company under the Aashi Grains umbrella, has been at the forefront of the pulses industry. We combine traditional Rajasthani sourcing wisdom with futuristic manufacturing technology.
+              Since its inception, Ramkaran Heeralal &amp; Sons (RHSPL), a flagship company under the <span className="text-[#775a17] font-semibold">Aashi Grains</span> umbrella, has been at the forefront of the pulses industry. We combine traditional Rajasthani sourcing wisdom with futuristic manufacturing technology.
             </p>
 
             <p className="text-[#46464e] text-base sm:text-lg leading-relaxed">
