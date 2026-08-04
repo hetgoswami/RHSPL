@@ -23,7 +23,7 @@ export default function KeyHighlights() {
           return (
             <div
               key={idx}
-              className="bg-white px-6 py-8 rounded-2xl border border-stone-200/60 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center justify-center text-center group"
+              className="bg-white px-6 py-8 rounded-2xl border border-stone-200/60 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-out flex flex-col items-center justify-center text-center group"
             >
               <div className="mb-4 text-[#04062a] group-hover:scale-110 transition-transform duration-300">
                 <IconComponent className="w-8 h-8 stroke-[1.75]" aria-hidden="true" />
