@@ -28,14 +28,14 @@ export default function HeroSection() {
 
             {/* Headline — exact 3-line wrap matching Figma */}
             <h1
-              className="font-heading font-extrabold text-[#04062a] tracking-tight leading-[1.12] max-w-[640px]"
+              className="font-heading font-extrabold text-[#04062a] tracking-tight leading-[1.14]"
               style={{
-                fontSize: 'clamp(36px, 4.2vw, 48px)',
+                fontSize: 'clamp(32px, 3.7vw, 44px)',
               }}
             >
               Premium<br />
               Chana Dal &amp; Besan<br />
-              Manufacturer &amp; Bulk Supplier
+              <span className="inline-block whitespace-normal sm:whitespace-nowrap">Manufacturer &amp; Bulk Supplier</span>
             </h1>
 
             {/* Description — single continuous paragraph */}
