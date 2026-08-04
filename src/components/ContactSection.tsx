@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
-const GOOGLE_MAPS_EMBED_URL = 'https://maps.google.com/maps?q=Ramkaran+Heeralal+%26+Sons+Pvt.+Ltd.,+24.9293111,74.537448&t=&z=16&ie=UTF8&iwloc=&output=embed';
+const GOOGLE_MAPS_EMBED_URL = 'https://maps.google.com/maps?q=24.9293111,74.537448(Ramkaran+Heeralal+%26+Sons+Pvt.+Ltd.)&t=&z=16&ie=UTF8&iwloc=&output=embed';
 
 export default function ContactSection() {
   const revealRef = useScrollReveal<HTMLDivElement>();
