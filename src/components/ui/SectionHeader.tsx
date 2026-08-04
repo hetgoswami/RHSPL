@@ -10,7 +10,7 @@ export default function SectionHeader({
   darkTheme = false,
   className = '',
 }: SectionHeaderProps) {
-  const alignContainer = align === 'center' ? 'text-center max-w-3xl mx-auto mb-14' : 'max-w-2xl mb-8';
+  const alignContainer = align === 'center' ? 'text-center max-w-4xl mx-auto mb-14' : 'max-w-2xl mb-8';
   const titleColor = darkTheme ? 'text-white' : 'text-[#04062a]';
   const descColor = darkTheme ? 'text-slate-300' : 'text-[#46464e]';
 
