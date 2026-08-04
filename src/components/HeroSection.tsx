@@ -98,7 +98,7 @@ export default function HeroSection() {
             </div>
 
             {/* Floating Card 1 — TOP RIGHT: 1500 Kg/Hr */}
-            <div className="absolute top-6 -right-2 sm:-right-4 lg:-right-8 bg-white px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-[0_12px_28px_rgba(0,0,0,0.08)] border border-stone-200/80 z-20">
+            <div className="absolute top-[32px] -right-2 sm:-right-4 lg:-right-8 bg-white px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-[0_12px_28px_rgba(0,0,0,0.08)] border border-stone-200/80 z-20">
               <p className="text-xl sm:text-[22px] font-bold leading-tight">
                 <span className="text-[#04062a]">1500 </span>
                 <span className="text-[#775a17]">Kg/Hr</span>
