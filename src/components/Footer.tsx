@@ -54,6 +54,16 @@ export default function Footer() {
             <ul className="space-y-3 font-normal text-sm text-[#46464e]">
               <li><Link href="#network" className="hover:text-[#775a17] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17] rounded-sm px-1">Network</Link></li>
               <li><Link href="#contact" className="hover:text-[#775a17] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17] rounded-sm px-1">Contact Us</Link></li>
+              <li>
+                <a 
+                  href="/brochure.pdf" 
+                  download="RHSPL_Brochure.pdf"
+                  className="hover:text-[#775a17] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17] rounded-sm px-1"
+                  aria-label="Download RHSPL Product Brochure PDF"
+                >
+                  Brochure
+                </a>
+              </li>
             </ul>
           </nav>
 
