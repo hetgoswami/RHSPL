@@ -19,7 +19,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
 
           {/* ── LEFT COLUMN ───────────────────────────── */}
-          <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-6 lg:space-y-7">
 
             {/* ESTABLISHED 2017 */}
             <p className="text-[13px] font-bold tracking-[0.18em] uppercase text-[#775a17]">
@@ -28,7 +28,7 @@ export default function HeroSection() {
 
             {/* Headline — exact 3-line wrap matching Figma */}
             <h1
-              className="font-heading font-extrabold text-[#04062a] tracking-tight leading-[1.18]"
+              className="font-heading font-extrabold text-[#04062a] tracking-tight leading-[1.12] max-w-[640px]"
               style={{
                 fontSize: 'clamp(36px, 4.2vw, 48px)',
               }}
@@ -38,26 +38,32 @@ export default function HeroSection() {
               Manufacturer &amp; Bulk Supplier
             </h1>
 
-            {/* Description Paragraph — exact max-w and line wrapping */}
-            <div className="space-y-3 text-[16px] sm:text-[17px] leading-[1.65] text-[#46464e] max-w-[520px]">
-              <p>
-                RHSPL (Ramkaran Heeralal &amp; Sons) provides Superior-Grade Chana
-                products to leading food manufacturers and wholesalers nationwide.
-              </p>
-              <p>
-                Experience precision manufacturing and consistent quality at scale.
-              </p>
-            </div>
+            {/* Description — single continuous paragraph */}
+            <p className="text-[16px] sm:text-[17px] leading-[1.65] text-[#46464e] max-w-[540px]">
+              RHSPL (Ramkaran Heeralal &amp; Sons) provides Superior-Grade Chana products to leading food manufacturers and wholesalers nationwide. Experience precision manufacturing and consistent quality at scale.
+            </p>
 
             {/* CTA Buttons Row */}
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Button
-                href="#contact"
-                variant="outline"
+                href="https://wa.me/919001208781?text=Hello%20RHSPL%20Team%2C%0A%0AI%20visited%20your%20website%20and%20I%27m%20interested%20in%20your%20Besan%20and%20Chana%20products.%0A%0APlease%20share%20your%20product%20catalogue%20and%20pricing.%0A%0AThank%20you."
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="whatsapp"
                 size="lg"
-                ariaLabel="Contact RHSPL sales team"
+                ariaLabel="Connect with RHSPL on WhatsApp"
+                icon={
+                  <Image 
+                    src="/images/whatsapp_icon_official.png"
+                    alt="WhatsApp Official Icon"
+                    width={70}
+                    height={72}
+                    className="w-6 h-6 shrink-0 object-contain"
+                    priority
+                  />
+                }
               >
-                Contact Us
+                LET'S CONNECT
               </Button>
 
               <Button
