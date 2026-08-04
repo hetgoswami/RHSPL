@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80" fill="none">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@800;900&amp;family=Manrope:wght@800&amp;display=swap');
+    .logo-main { font-family: 'Rubik', 'Trebuchet MS', sans-serif; font-weight: 900; font-size: 50px; fill: #04062a; letter-spacing: 2px; }
+    .logo-sub { font-family: 'Manrope', 'Arial Black', sans-serif; font-weight: 800; font-size: 13.5px; fill: #04062a; letter-spacing: 1.8px; }
+  </style>
+  <text x="0" y="46" class="logo-main">RHSPL</text>
+  <line x1="0" y1="54" x2="278" y2="54" stroke="#775a17" stroke-width="3" stroke-linecap="round" />
+  <text x="0" y="73" class="logo-sub">RAMKARAN HEERALAL &amp; SONS</text>
+</svg>
