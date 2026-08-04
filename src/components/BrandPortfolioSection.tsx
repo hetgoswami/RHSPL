@@ -92,7 +92,7 @@ export default function BrandPortfolioSection() {
         {BRAND_CARDS.map((card) => (
           <div
             key={card.id}
-            className="bg-white rounded-3xl border border-stone-200/70 p-6 flex flex-col justify-between relative shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-out group overflow-hidden"
+            className="bg-white rounded-3xl border border-stone-200/70 p-6 flex flex-col justify-between relative shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 ease-out group overflow-hidden"
           >
             {/* Badge Pill */}
             <div className="absolute top-5 left-5 z-10">
@@ -102,15 +102,21 @@ export default function BrandPortfolioSection() {
             </div>
 
             {/* Bag Image Container */}
-            <div className="relative w-full aspect-[4/3] rounded-2xl flex items-center justify-center p-2 mb-4 overflow-hidden bg-stone-50/60 border border-dashed border-stone-200">
+            <div
+              className={`relative w-full aspect-[4/4] sm:aspect-[4/5] rounded-2xl flex items-center justify-center p-3 mb-5 overflow-hidden transition-colors duration-300 ${
+                card.image
+                  ? 'bg-gradient-to-b from-stone-50/80 to-stone-100/40 group-hover:from-amber-50/50 group-hover:to-stone-50'
+                  : 'bg-stone-50/60 border border-dashed border-stone-200'
+              }`}
+            >
               {card.image ? (
                 <Image
                   src={card.image}
-                  alt={card.name}
+                  alt={`${card.name} ${card.badge} Besan 30kg PP Bag`}
                   fill
                   loading="lazy"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
+                  className="object-contain p-2 drop-shadow-md group-hover:scale-105 group-hover:drop-shadow-xl transition-all duration-500 ease-out"
                 />
               ) : (
                 <div className="flex flex-col items-center justify-center text-stone-400 gap-2">
@@ -122,16 +128,23 @@ export default function BrandPortfolioSection() {
 
             {/* Content */}
             <div>
-              <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#04062a] mb-3">
-                {card.name}
-              </h3>
-              <div className="pt-2 border-t border-stone-100">
-                <span className="text-[11px] font-medium text-[#775a17] tracking-normal block mb-0.5">
-                  Packaging
+              <div className="flex items-baseline justify-between mb-1">
+                <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#04062a]">
+                  {card.name}
+                </h3>
+                <span className="text-xs font-semibold tracking-wider text-amber-700/80 uppercase">
+                  {card.badge}
                 </span>
-                <span className="text-sm font-medium text-[#04062a]">
-                  {card.packaging}
-                </span>
+              </div>
+              <div className="pt-3 border-t border-stone-100 mt-2 flex items-center justify-between">
+                <div>
+                  <span className="text-[11px] font-medium text-[#775a17] tracking-normal block mb-0.5">
+                    Packaging Standard
+                  </span>
+                  <span className="text-sm font-semibold text-[#04062a]">
+                    {card.packaging}
+                  </span>
+                </div>
               </div>
             </div>
           </div>

@@ -2,8 +2,6 @@
 
 import Image from 'next/image';
 import SectionWrapper from '@/components/ui/SectionWrapper';
-import SectionHeader from '@/components/ui/SectionHeader';
-import Badge from '@/components/ui/Badge';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 export default function ProductRangeSection() {

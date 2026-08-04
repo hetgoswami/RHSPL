@@ -21,7 +21,7 @@ export default function ContactSection() {
           <div className="space-y-6">
             <SectionHeader 
               eyebrow="GET IN TOUCH"
-              title={<>Let's Discuss Your Bulk<br />Requirements</>}
+              title={<>Let&apos;s Discuss Your Bulk<br />Requirements</>}
               description="Connect with our sales team directly for bulk pricing, custom specifications, and logistics support."
               align="left"
             />
@@ -46,14 +46,14 @@ export default function ContactSection() {
                   />
                 }
               >
-                Let's Connect
+                Let&apos;s Connect
               </Button>
             </div>
 
             {/* Industrial Inquiry Notice Box */}
             <div className="bg-[#f6f2f6] rounded-2xl p-6 border border-stone-200/70 max-w-md mt-8">
               <p className="text-sm sm:text-base text-[#46464e] leading-relaxed font-normal">
-                "Our team typically responds to industrial inquiries within 2 business hours."
+                &quot;Our team typically responds to industrial inquiries within 2 business hours.&quot;
               </p>
             </div>
           </div>
