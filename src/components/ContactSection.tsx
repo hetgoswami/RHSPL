@@ -116,11 +116,13 @@ export default function ContactSection() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
-              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/50 text-[#04062a] shadow-sm">
-                <span className="text-xs sm:text-sm font-medium flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-[#775a17]" /> View Location on Google Maps
+              <div className="absolute bottom-2.5 sm:bottom-3 left-2.5 sm:left-3 right-2.5 sm:right-3 flex items-center justify-between gap-2 bg-white/90 backdrop-blur-md px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-white/50 text-[#04062a] shadow-sm">
+                <span className="text-xs sm:text-sm font-medium flex items-center gap-1.5 min-w-0">
+                  <MapPin className="w-4 h-4 text-[#775a17] shrink-0" />
+                  <span className="hidden sm:inline truncate">View Location on Google Maps</span>
+                  <span className="sm:hidden truncate">View Location</span>
                 </span>
-                <span className="text-xs font-semibold text-[#775a17] group-hover:underline">
+                <span className="text-xs font-semibold text-[#775a17] shrink-0 whitespace-nowrap group-hover:underline">
                   Open Maps &rarr;
                 </span>
               </div>
