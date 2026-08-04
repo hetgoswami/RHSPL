@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
-const GOOGLE_MAPS_EMBED_URL = 'https://maps.google.com/maps?q=Ramkaran+Heeralal+%26+Sons+Pvt.+Ltd.,+24.9293111,74.537448&t=k&z=17&ie=UTF8&iwloc=&output=embed';
+const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/mAHy9KSrUD3DZ6PN9';
 
 export default function ContactSection() {
   const revealRef = useScrollReveal<HTMLDivElement>();
@@ -100,20 +100,31 @@ export default function ContactSection() {
               </div>
             </address>
 
-            {/* Interactive Google Map Embed */}
-            <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden mt-6 border border-stone-200/80 shadow-sm bg-stone-100">
-              <iframe
-                src={GOOGLE_MAPS_EMBED_URL}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="RHSPL Factory Location on Google Maps"
-                className="w-full h-full rounded-2xl"
+            {/* Google Map Location Display */}
+            <a
+              href={GOOGLE_MAPS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative aspect-[16/10] w-full rounded-2xl overflow-hidden mt-6 border border-stone-200/80 shadow-sm bg-stone-100 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17]"
+              title="Open RHSPL Factory location in Google Maps"
+            >
+              <Image
+                src="/images/contact_us_map.webp"
+                alt="RHSPL Factory Location Satellite Map - Ramkaran Heeralal & Sons Pvt. Ltd."
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/50 text-[#04062a] shadow-sm">
+                <span className="text-xs sm:text-sm font-medium flex items-center gap-1.5">
+                  <MapPin className="w-4 h-4 text-[#775a17]" /> View Location on Google Maps
+                </span>
+                <span className="text-xs font-semibold text-[#775a17] group-hover:underline">
+                  Open Maps &rarr;
+                </span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
