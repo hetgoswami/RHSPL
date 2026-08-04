@@ -25,7 +25,7 @@ const BRAND_CARDS: BrandItem[] = [
   {
     id: 'angad-premium',
     name: 'ANGAD',
-    badge: 'PREMIUM',
+    badge: 'SUPERFINE',
     image: '/images/brand_angad_purple_v2.webp',
     packaging: '30kg Heavy Duty PP Bags'
   },
@@ -40,14 +40,14 @@ const BRAND_CARDS: BrandItem[] = [
     id: 'arjun-premium',
     name: 'ARJUN',
     badge: 'PREMIUM',
-    image: '/images/.webp',
+    image: '/images/brand_arjun_yellow_v2.webp',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'angad-superfine',
     name: 'ANGAD',
     badge: 'SUPERFINE',
-    image: '/images/',
+    image: '/images/brand_angad_green_v2.webp',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
