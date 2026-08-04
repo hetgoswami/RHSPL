@@ -79,7 +79,7 @@ export default function BrandPortfolioSection() {
   return (
     <SectionWrapper id="brands" bgVariant="soft" ariaLabel="Besan Brand Portfolio Section">
       {/* Section Header */}
-      <SectionHeader 
+      <SectionHeader
         eyebrow="STRATEGIC BRAND PORTFOLIO"
         title="Our Multi-Brand Besan Portfolio"
         description="Delivering specialized Besan solutions through our diverse brand family, each tailored for specific industrial and commercial requirements."
@@ -89,7 +89,7 @@ export default function BrandPortfolioSection() {
       {/* 3x3 Brand Cards Grid */}
       <div ref={revealRef} className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {BRAND_CARDS.map((card) => (
-          <div 
+          <div
             key={card.id}
             className="bg-white rounded-3xl border border-stone-200/70 p-6 flex flex-col justify-between relative shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ease-out group overflow-hidden"
           >
@@ -102,7 +102,7 @@ export default function BrandPortfolioSection() {
 
             {/* Bag Image Container — clean white background matching Figma */}
             <div className="relative w-full aspect-[4/3] rounded-2xl flex items-center justify-center p-2 mb-4 overflow-hidden">
-              <Image 
+              <Image
                 src={card.image}
                 alt={card.name}
                 fill
