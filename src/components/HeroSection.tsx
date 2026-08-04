@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Button from '@/components/ui/Button';
+import { Download } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 export default function HeroSection() {
@@ -54,15 +55,39 @@ export default function HeroSection() {
               </p>
             </div>
 
-            {/* CTA Button — outlined style */}
-            <div className="mt-2">
+            {/* CTA Buttons Row */}
+            <div className="mt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Button
-                href="#contact"
-                variant="outline"
+                href="https://wa.me/919001208781?text=Hello%20RHSPL%20Team%2C%0A%0AI%20visited%20your%20website%20and%20I%27m%20interested%20in%20your%20Besan%20and%20Chana%20products.%0A%0APlease%20share%20your%20product%20catalogue%20and%20pricing.%0A%0AThank%20you."
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="whatsapp"
                 size="lg"
-                ariaLabel="Contact RHSPL sales team for bulk inquiries"
+                ariaLabel="Connect with RHSPL on WhatsApp"
+                icon={
+                  <Image 
+                    src="/images/whatsapp_icon_official.png"
+                    alt="WhatsApp Official Icon"
+                    width={70}
+                    height={72}
+                    className="w-6 h-6 shrink-0 object-contain"
+                    priority
+                  />
+                }
               >
-                Contact Us
+                LET'S CONNECT
+              </Button>
+
+              <Button
+                href="/brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="secondary"
+                size="lg"
+                ariaLabel="Download RHSPL Product Brochure PDF"
+                icon={<Download className="w-5 h-5 shrink-0" aria-hidden="true" />}
+              >
+                Download Brochure
               </Button>
             </div>
 

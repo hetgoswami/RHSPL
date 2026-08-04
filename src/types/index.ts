@@ -1,6 +1,6 @@
 import { ReactNode, MouseEventHandler } from 'react';
 
-export type ButtonVariant = 'primary' | 'outline' | 'whatsapp' | 'gold' | 'ghost';
+export type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'whatsapp' | 'gold' | 'ghost';
 export type ButtonSize = 'sm' | 'md' | 'lg';
 
 export interface ButtonProps {
