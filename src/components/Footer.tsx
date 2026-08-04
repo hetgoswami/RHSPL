@@ -58,10 +58,10 @@ export default function Footer() {
                 <a 
                   href="/brochure.pdf" 
                   download="RHSPL_Brochure.pdf"
-                  className="hover:text-[#775a17] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17] rounded-sm px-1"
+                  className="underline underline-offset-4 hover:text-[#775a17] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17] rounded-sm px-1"
                   aria-label="Download RHSPL Product Brochure PDF"
                 >
-                  Brochure
+                  Download Brochure
                 </a>
               </li>
             </ul>
