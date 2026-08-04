@@ -98,23 +98,23 @@ export default function HeroSection() {
             </div>
 
             {/* Floating Card 1 — TOP RIGHT: 1500 Kg/Hr */}
-            <div className="absolute top-0 right-0 sm:right-2 lg:-right-4 bg-white px-6 py-4 rounded-2xl shadow-[0_16px_36px_rgba(0,0,0,0.08)] border border-stone-200/80 z-20 min-w-[240px]">
-              <p className="text-2xl sm:text-[28px] font-extrabold leading-none">
+            <div className="absolute top-6 -right-2 sm:-right-4 lg:-right-8 bg-white px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-[0_12px_28px_rgba(0,0,0,0.08)] border border-stone-200/80 z-20">
+              <p className="text-xl sm:text-[22px] font-bold leading-tight">
                 <span className="text-[#04062a]">1500 </span>
-                <span className="text-[#775a17] font-bold">Kg/Hr</span>
+                <span className="text-[#775a17]">Kg/Hr</span>
               </p>
-              <p className="text-xs sm:text-[13px] font-medium mt-1.5 text-[#46464e]">
+              <p className="text-[11px] sm:text-[12px] font-medium text-[#46464e] mt-0.5">
                 Besan Processing Capacity
               </p>
             </div>
 
             {/* Floating Card 2 — BOTTOM LEFT: 4000 Kg/Hr */}
-            <div className="absolute -bottom-2 left-0 sm:left-2 lg:-left-4 bg-white px-6 py-4 rounded-2xl shadow-[0_16px_36px_rgba(0,0,0,0.08)] border border-stone-200/80 z-20 min-w-[320px]">
-              <p className="text-2xl sm:text-[28px] font-extrabold leading-none">
+            <div className="absolute -bottom-6 -left-2 sm:-left-4 lg:-left-8 bg-white px-5 py-3.5 sm:px-6 sm:py-4 rounded-xl shadow-[0_12px_28px_rgba(0,0,0,0.08)] border border-stone-200/80 z-20">
+              <p className="text-xl sm:text-[22px] font-bold leading-tight">
                 <span className="text-[#04062a]">4000 </span>
-                <span className="text-[#775a17] font-bold">Kg/Hr</span>
+                <span className="text-[#775a17]">Kg/Hr</span>
               </p>
-              <p className="text-xs sm:text-[13px] font-medium mt-1.5 text-[#46464e]">
+              <p className="text-[11px] sm:text-[12px] font-medium text-[#46464e] mt-0.5">
                 Chanal Dal and Gota Processing Capacity
               </p>
             </div>
