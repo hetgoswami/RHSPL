@@ -24,14 +24,15 @@ export default function Header() {
         {/* Official Logo */}
         <Link 
           href="/" 
-          className="relative h-[46px] w-[175px] shrink-0 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17] focus-visible:ring-offset-2 rounded-lg"
+          className="relative h-[50px] w-[158px] shrink-0 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17] focus-visible:ring-offset-2 rounded-lg"
           aria-label="RHSPL Ramkaran Heeralal & Sons Homepage"
         >
           <Image 
-            src="/images/rhspl_logo_clean.svg"
+            src="/images/rhspl_official_logo.png"
             alt="RHSPL - Ramkaran Heeralal & Sons Logo"
-            fill
-            className="object-contain object-left"
+            width={360}
+            height={114}
+            className="h-full w-auto object-contain object-left"
             priority
           />
         </Link>
