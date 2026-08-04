@@ -13,63 +13,63 @@ const BRAND_CARDS: BrandItem[] = [
     id: 'heritage-superfine',
     name: 'HERITAGE',
     badge: 'SUPERFINE',
-    image: '',
+    image: '/images/brand_heritage_superfine.png',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'heritage-premium',
     name: 'HERITAGE',
     badge: 'PREMIUM',
-    image: '',
+    image: '/images/brand_heritage_premium.png',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'angad-premium',
     name: 'ANGAD',
     badge: 'PREMIUM',
-    image: '',
+    image: '/images/brand_angad_purple.png',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'angad-superfine',
     name: 'ANGAD',
     badge: 'SUPERFINE',
-    image: '',
+    image: '/images/brand_angad_green.png',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'arjun-superfine',
     name: 'ARJUN',
     badge: 'SUPERFINE',
-    image: '',
+    image: '/images/brand_arjun_red.png',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'arjun-premium',
     name: 'ARJUN',
     badge: 'PREMIUM',
-    image: '',
+    image: '/images/brand_arjun_yellow.png',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'gajraj-superfine',
     name: 'GAJRAJ',
     badge: 'SUPERFINE',
-    image: '',
+    image: '/images/brand_gajraj_maroon.png',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'gajraj-premium',
     name: 'GAJRAJ',
     badge: 'PREMIUM',
-    image: '',
+    image: '/images/brand_gajraj_blue.png',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'rhspl-superfine',
     name: 'RHSPL',
     badge: 'SUPERFINE',
-    image: '',
+    image: '/images/brand_rhspl_green.png',
     packaging: '30kg Heavy Duty PP Bags'
   }
 ];
