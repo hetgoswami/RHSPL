@@ -13,14 +13,14 @@ export default function Badge({
   };
 
   const variantStyles = {
-    superfine: 'bg-[#775a17] text-white font-extrabold uppercase tracking-wider',
-    premium: 'bg-[#134578] text-white font-extrabold uppercase tracking-wider',
+    superfine: 'bg-[#b0841b] text-white font-bold uppercase tracking-wider',
+    premium: 'bg-[#2a3875] text-white font-bold uppercase tracking-wider',
     muted: 'bg-[#f0edf0] text-[#8386af] font-semibold',
     gold: 'bg-[#fdd586] text-[#785a18] font-bold',
   };
 
   return (
-    <span className={`inline-block rounded-full shadow-sm ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}>
+    <span className={`inline-block rounded-md shadow-sm ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}>
       {children}
     </span>
   );
