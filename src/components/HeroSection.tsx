@@ -63,7 +63,7 @@ export default function HeroSection() {
                   />
                 }
               >
-                LET'S CONNECT
+                Let's Connect
               </Button>
 
               <Button

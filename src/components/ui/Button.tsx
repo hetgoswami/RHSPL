@@ -27,7 +27,7 @@ export default function Button({
     primary: "bg-[#04062a] text-white hover:bg-[#0e1726] focus-visible:ring-[#04062a]",
     secondary: "bg-white text-[#04062a] border-[1.5px] border-[#04062a] hover:bg-[#04062a] hover:text-white transition-all duration-250 ease-out focus-visible:ring-[#04062a] shadow-sm hover:shadow-md",
     outline: "border border-[#04062a] text-[#04062a] bg-transparent hover:bg-[#04062a] hover:text-white focus-visible:ring-[#775a17]",
-    whatsapp: "border border-[#25D366] bg-white hover:bg-emerald-50/60 text-[#04062a] tracking-wider uppercase focus-visible:ring-[#25D366]",
+    whatsapp: "border border-[#25D366] bg-white hover:bg-emerald-50/60 text-[#04062a] focus-visible:ring-[#25D366]",
     gold: "bg-[#775a17] text-white hover:bg-[#604712] focus-visible:ring-[#775a17]",
     ghost: "text-[#46464e] hover:text-[#775a17] bg-transparent focus-visible:ring-[#775a17]",
   };

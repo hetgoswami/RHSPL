@@ -42,7 +42,7 @@ export default function ContactSection() {
                   />
                 }
               >
-                LET'S CONNECT
+                Let's Connect
               </Button>
             </div>
 
