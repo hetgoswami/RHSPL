@@ -8,6 +8,7 @@ export default function Button({
   href,
   target,
   rel,
+  download,
   icon,
   ariaLabel,
   children,
@@ -34,7 +35,7 @@ export default function Button({
   const combinedClasses = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`.trim();
 
   if (href) {
-    const isExternal = href.startsWith('http') || href.startsWith('https') || href.startsWith('wa.me') || href.startsWith('mailto:') || href.startsWith('tel:') || href.endsWith('.pdf') || target === '_blank';
+    const isExternal = href.startsWith('http') || href.startsWith('https') || href.startsWith('wa.me') || href.startsWith('mailto:') || href.startsWith('tel:') || href.endsWith('.pdf') || target === '_blank' || Boolean(download);
 
     if (isExternal) {
       return (
@@ -42,6 +43,7 @@ export default function Button({
           href={href}
           target={target}
           rel={rel}
+          download={download}
           className={combinedClasses}
           aria-label={ariaLabel}
           onClick={onClick}

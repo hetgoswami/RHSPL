@@ -82,6 +82,7 @@ export default function HeroSection() {
                 href="/brochure.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                download="RHSPL_Brochure.pdf"
                 variant="secondary"
                 size="lg"
                 ariaLabel="Download RHSPL Product Brochure PDF"

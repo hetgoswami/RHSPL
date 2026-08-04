@@ -9,6 +9,7 @@ export interface ButtonProps {
   href?: string;
   target?: string;
   rel?: string;
+  download?: string | boolean;
   icon?: ReactNode;
   ariaLabel?: string;
   children: ReactNode;
