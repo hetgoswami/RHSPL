@@ -12,29 +12,25 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="w-full bg-white border-b border-stone-100"
+      className="w-full bg-white border-b border-stone-100 overflow-hidden"
       aria-label="Hero Section"
     >
-      <div ref={revealRef} className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div ref={revealRef} className="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
 
           {/* ── LEFT COLUMN ───────────────────────────── */}
-          <div className="lg:col-span-6 flex flex-col gap-6">
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
 
             {/* ESTABLISHED 2017 */}
-            <p
-              className="text-[12px] font-bold tracking-[0.2em] uppercase text-[#775a17]"
-            >
-              Established 2017
+            <p className="text-[13px] font-bold tracking-[0.18em] uppercase text-[#775a17]">
+              ESTABLISHED 2017
             </p>
 
-            {/* Headline */}
+            {/* Headline — exact 3-line wrap matching Figma */}
             <h1
-              className="font-extrabold tracking-tight text-[#04062a]"
+              className="font-heading font-extrabold text-[#04062a] tracking-tight leading-[1.18]"
               style={{
-                fontSize: 'clamp(34px, 4vw, 44px)',
-                lineHeight: '1.2',
-                letterSpacing: '-0.02em'
+                fontSize: 'clamp(36px, 4.2vw, 48px)',
               }}
             >
               Premium<br />
@@ -42,10 +38,8 @@ export default function HeroSection() {
               Manufacturer &amp; Bulk Supplier
             </h1>
 
-            {/* Description */}
-            <div
-              className="flex flex-col gap-1 text-[16px] sm:text-[18px] leading-[30px] text-[#46464e] max-w-[576px]"
-            >
+            {/* Description Paragraph — exact max-w and line wrapping */}
+            <div className="space-y-3 text-[16px] sm:text-[17px] leading-[1.65] text-[#46464e] max-w-[520px]">
               <p>
                 RHSPL (Ramkaran Heeralal &amp; Sons) provides Superior-Grade Chana
                 products to leading food manufacturers and wholesalers nationwide.
@@ -56,26 +50,14 @@ export default function HeroSection() {
             </div>
 
             {/* CTA Buttons Row */}
-            <div className="mt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Button
-                href="https://wa.me/919001208781?text=Hello%20RHSPL%20Team%2C%0A%0AI%20visited%20your%20website%20and%20I%27m%20interested%20in%20your%20Besan%20and%20Chana%20products.%0A%0APlease%20share%20your%20product%20catalogue%20and%20pricing.%0A%0AThank%20you."
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="whatsapp"
+                href="#contact"
+                variant="outline"
                 size="lg"
-                ariaLabel="Connect with RHSPL on WhatsApp"
-                icon={
-                  <Image 
-                    src="/images/whatsapp_icon_official.png"
-                    alt="WhatsApp Official Icon"
-                    width={70}
-                    height={72}
-                    className="w-6 h-6 shrink-0 object-contain"
-                    priority
-                  />
-                }
+                ariaLabel="Contact RHSPL sales team"
               >
-                LET'S CONNECT
+                Contact Us
               </Button>
 
               <Button
@@ -95,47 +77,38 @@ export default function HeroSection() {
           </div>
 
           {/* ── RIGHT COLUMN — Image + Floating Cards ── */}
-          <div className="lg:col-span-6 relative flex justify-center lg:justify-end pr-0 lg:pr-8">
+          <div className="lg:col-span-6 relative flex justify-center lg:justify-end py-4 lg:py-6">
 
-            {/* Main image container */}
-            <div
-              className="relative w-full max-w-[545px] overflow-hidden shadow-[0_16px_36px_rgba(0,0,0,0.1)] border border-stone-200/50"
-              style={{ borderRadius: '16px', aspectRatio: '545 / 500' }}
-            >
+            {/* Hero Main Processing Facility Image */}
+            <div className="relative w-full max-w-[540px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.08)] border border-stone-200/60 aspect-[540/460]">
               <Image
                 src="/images/hero_factory.webp"
                 alt="RHSPL Chana Dal and Besan Processing Facility"
                 fill
                 priority
-                sizes="(max-width: 1024px) 100vw, 545px"
+                sizes="(max-width: 1024px) 100vw, 540px"
                 className="object-cover"
               />
             </div>
 
-            {/* Floating card — TOP RIGHT: 1500 Kg/Hr */}
-            <div
-              className="absolute top-6 -right-2 sm:-right-6 lg:-right-6 bg-white px-6 py-4 shadow-[0_12px_28px_rgba(0,0,0,0.08)] border border-[#c7c5cf] z-20"
-              style={{ borderRadius: '10px', minWidth: '237px' }}
-            >
-              <p className="font-semibold text-[24px] leading-[32px]">
+            {/* Floating Card 1 — TOP RIGHT: 1500 Kg/Hr */}
+            <div className="absolute top-0 right-0 sm:right-2 lg:-right-4 bg-white px-6 py-4 rounded-2xl shadow-[0_16px_36px_rgba(0,0,0,0.08)] border border-stone-200/80 z-20 min-w-[240px]">
+              <p className="text-2xl sm:text-[28px] font-extrabold leading-none">
                 <span className="text-[#04062a]">1500 </span>
-                <span className="text-[#775a17]">Kg/Hr</span>
+                <span className="text-[#775a17] font-bold">Kg/Hr</span>
               </p>
-              <p className="text-[12px] font-bold mt-1 text-[#46464e] tracking-[0.08em]">
+              <p className="text-xs sm:text-[13px] font-medium mt-1.5 text-[#46464e]">
                 Besan Processing Capacity
               </p>
             </div>
 
-            {/* Floating card — BOTTOM LEFT: 4000 Kg/Hr */}
-            <div
-              className="absolute -bottom-6 -left-2 sm:-left-6 lg:-left-6 bg-white px-6 py-4 shadow-[0_12px_28px_rgba(0,0,0,0.08)] border border-[#c7c5cf] z-20"
-              style={{ borderRadius: '10px', minWidth: '335px' }}
-            >
-              <p className="font-semibold text-[24px] leading-[32px]">
+            {/* Floating Card 2 — BOTTOM LEFT: 4000 Kg/Hr */}
+            <div className="absolute -bottom-2 left-0 sm:left-2 lg:-left-4 bg-white px-6 py-4 rounded-2xl shadow-[0_16px_36px_rgba(0,0,0,0.08)] border border-stone-200/80 z-20 min-w-[320px]">
+              <p className="text-2xl sm:text-[28px] font-extrabold leading-none">
                 <span className="text-[#04062a]">4000 </span>
-                <span className="text-[#775a17]">Kg/Hr</span>
+                <span className="text-[#775a17] font-bold">Kg/Hr</span>
               </p>
-              <p className="text-[12px] font-bold mt-1 text-[#46464e] tracking-[0.08em]">
+              <p className="text-xs sm:text-[13px] font-medium mt-1.5 text-[#46464e]">
                 Chanal Dal and Gota Processing Capacity
               </p>
             </div>
