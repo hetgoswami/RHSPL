@@ -24,7 +24,7 @@ const BRAND_CARDS: BrandItem[] = [
   },
   {
     id: 'angad-premium',
-    name: 'Angad',
+    name: 'ANGAD',
     badge: 'PREMIUM',
     image: '/images/brand_angad_purple_v2.webp',
     packaging: '30kg Heavy Duty PP Bags'
