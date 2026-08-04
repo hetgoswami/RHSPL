@@ -28,7 +28,7 @@ export default function HeroSection() {
 
             {/* Headline — exact 3-line wrap matching Figma */}
             <h1
-              className="font-heading font-semibold text-[#04062a] tracking-tight leading-[1.14]"
+              className="font-heading font-semibold text-[#04062a] tracking-tight leading-[1.22]"
               style={{
                 fontSize: 'clamp(32px, 3.7vw, 44px)',
               }}
