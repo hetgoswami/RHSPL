@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { Package } from 'lucide-react';
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Badge from '@/components/ui/Badge';
@@ -12,64 +13,63 @@ const BRAND_CARDS: BrandItem[] = [
     id: 'heritage-superfine',
     name: 'HERITAGE',
     badge: 'SUPERFINE',
-    image: '/images/brand_heritage_superfine.webp',
+    image: '',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'heritage-premium',
     name: 'HERITAGE',
     badge: 'PREMIUM',
-    image: '/images/brand_heritage_premium.webp',
+    image: '',
     packaging: '30kg Heavy Duty PP Bags'
   },
-
   {
     id: 'angad-premium',
     name: 'ANGAD',
     badge: 'PREMIUM',
-    image: '/images/brand_angad_purple_v2.webp',
+    image: '',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'angad-superfine',
     name: 'ANGAD',
     badge: 'SUPERFINE',
-    image: '/images/brand_angad_green_v2.webp',
+    image: '',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'arjun-superfine',
     name: 'ARJUN',
     badge: 'SUPERFINE',
-    image: '/images/brand_arjun_red_v2.webp',
+    image: '',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'arjun-premium',
     name: 'ARJUN',
     badge: 'PREMIUM',
-    image: '/images/brand_arjun_yellow_v2.webp',
+    image: '',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'gajraj-superfine',
     name: 'GAJRAJ',
     badge: 'SUPERFINE',
-    image: '/images/brand_gajraj_maroon.webp',
+    image: '',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'gajraj-premium',
     name: 'GAJRAJ',
     badge: 'PREMIUM',
-    image: '/images/brand_gajraj_blue.webp',
+    image: '',
     packaging: '30kg Heavy Duty PP Bags'
   },
   {
     id: 'rhspl-superfine',
     name: 'RHSPL',
     badge: 'SUPERFINE',
-    image: '/images/brand_rhspl_green.webp',
+    image: '',
     packaging: '30kg Heavy Duty PP Bags'
   }
 ];
@@ -101,16 +101,23 @@ export default function BrandPortfolioSection() {
               </Badge>
             </div>
 
-            {/* Bag Image Container — clean white background matching Figma */}
-            <div className="relative w-full aspect-[4/3] rounded-2xl flex items-center justify-center p-2 mb-4 overflow-hidden">
-              <Image
-                src={card.image}
-                alt={card.name}
-                fill
-                loading="lazy"
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
-              />
+            {/* Bag Image Container */}
+            <div className="relative w-full aspect-[4/3] rounded-2xl flex items-center justify-center p-2 mb-4 overflow-hidden bg-stone-50/60 border border-dashed border-stone-200">
+              {card.image ? (
+                <Image
+                  src={card.image}
+                  alt={card.name}
+                  fill
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
+                />
+              ) : (
+                <div className="flex flex-col items-center justify-center text-stone-400 gap-2">
+                  <Package className="w-10 h-10 stroke-[1.5] text-stone-300 group-hover:scale-110 transition-transform duration-300" />
+                  <span className="text-xs font-medium text-stone-400">Packaging Image Pending</span>
+                </div>
+              )}
             </div>
 
             {/* Content */}
