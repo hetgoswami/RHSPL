@@ -14,63 +14,63 @@ const BRAND_CARDS: BrandItem[] = [
     name: 'HERITAGE',
     badge: 'SUPERFINE',
     image: '/images/brand_heritage_superfine.png',
-    packaging: '30kg Heavy Duty PP Bags'
+    packaging: '30kg Heavy Duty BOPP Bags'
   },
   {
     id: 'heritage-premium',
     name: 'HERITAGE',
     badge: 'PREMIUM',
     image: '/images/brand_heritage_premium.png',
-    packaging: '30kg Heavy Duty PP Bags'
+    packaging: '30kg Heavy Duty BOPP Bags'
   },
   {
     id: 'angad-premium',
     name: 'ANGAD',
     badge: 'PREMIUM',
     image: '/images/brand_angad_purple.png',
-    packaging: '30kg Heavy Duty PP Bags'
+    packaging: '30kg Heavy Duty BOPP Bags'
   },
   {
     id: 'angad-superfine',
     name: 'ANGAD',
     badge: 'SUPERFINE',
     image: '/images/brand_angad_green.png',
-    packaging: '30kg Heavy Duty PP Bags'
+    packaging: '30kg Heavy Duty BOPP Bags'
   },
   {
     id: 'arjun-superfine',
     name: 'ARJUN',
     badge: 'SUPERFINE',
     image: '/images/brand_arjun_red.png',
-    packaging: '30kg Heavy Duty PP Bags'
+    packaging: '30kg Heavy Duty BOPP Bags'
   },
   {
     id: 'arjun-premium',
     name: 'ARJUN',
     badge: 'PREMIUM',
     image: '/images/brand_arjun_yellow.png',
-    packaging: '30kg Heavy Duty PP Bags'
+    packaging: '30kg Heavy Duty BOPP Bags'
   },
   {
     id: 'gajraj-superfine',
     name: 'GAJRAJ',
     badge: 'SUPERFINE',
     image: '/images/brand_gajraj_maroon.png',
-    packaging: '30kg Heavy Duty PP Bags'
+    packaging: '30kg Heavy Duty BOPP Bags'
   },
   {
     id: 'gajraj-premium',
     name: 'GAJRAJ',
     badge: 'PREMIUM',
     image: '/images/brand_gajraj_blue.png',
-    packaging: '30kg Heavy Duty PP Bags'
+    packaging: '30kg Heavy Duty BOPP Bags'
   },
   {
     id: 'rhspl-superfine',
     name: 'RHSPL',
     badge: 'SUPERFINE',
     image: '/images/brand_rhspl_green.png',
-    packaging: '30kg Heavy Duty PP Bags'
+    packaging: '30kg Heavy Duty BOPP Bags'
   }
 ];
 
@@ -103,11 +103,10 @@ export default function BrandPortfolioSection() {
 
             {/* Bag Image Container */}
             <div
-              className={`relative w-full aspect-[4/4] sm:aspect-[4/5] rounded-2xl flex items-center justify-center p-3 mb-5 overflow-hidden transition-colors duration-300 ${
-                card.image
-                  ? 'bg-gradient-to-b from-stone-50/80 to-stone-100/40 group-hover:from-amber-50/50 group-hover:to-stone-50'
-                  : 'bg-stone-50/60 border border-dashed border-stone-200'
-              }`}
+              className={`relative w-full aspect-[4/4] sm:aspect-[4/5] rounded-2xl flex items-center justify-center p-3 mb-5 overflow-hidden transition-colors duration-300 ${card.image
+                ? 'bg-gradient-to-b from-stone-50/80 to-stone-100/40 group-hover:from-amber-50/50 group-hover:to-stone-50'
+                : 'bg-stone-50/60 border border-dashed border-stone-200'
+                }`}
             >
               {card.image ? (
                 <Image
@@ -132,9 +131,6 @@ export default function BrandPortfolioSection() {
                 <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#04062a]">
                   {card.name}
                 </h3>
-                <span className="text-xs font-semibold tracking-wider text-amber-700/80 uppercase">
-                  {card.badge}
-                </span>
               </div>
               <div className="pt-3 border-t border-stone-100 mt-2 flex items-center justify-between">
                 <div>

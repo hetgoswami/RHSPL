@@ -16,11 +16,11 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-4">
             <Link 
               href="/" 
-              className="relative block h-[56px] w-[177px] shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17] focus-visible:ring-offset-2 rounded-lg"
+              className="relative block h-[60px] w-[210px] shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#775a17] focus-visible:ring-offset-2 rounded-lg"
               aria-label="RHSPL Homepage"
             >
               <Image 
-                src="/images/rhspl_official_logo.png"
+                src="/images/rhspl_footer_logo.png"
                 alt="RHSPL - Ramkaran Heeralal & Sons Logo"
                 width={360}
                 height={114}
